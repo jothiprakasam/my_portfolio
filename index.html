@@ -28,31 +28,20 @@
         margin-bottom: 1em;
       }
 
-      .image {
-        width: 150px; /* Set a specific width for the student image */
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px #888888;
-        margin-bottom: 1em;
-      }
-
-      @media only screen and (min-width: 600px) {
-        .image {
-          width: 200px; /* Increase the width on larger screens */
+      /* Media query for mobile screens with a maximum width of 767px */
+      @media only screen and (max-width: 767px) {
+        h1 {
+          font-size: 2em; /* Adjust font size for smaller screens */
         }
-      }
 
-      .student-image-container {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        p {
+          font-size: 1.5em; /* Adjust font size for smaller screens */
+        }
       }
     </style>
   </head>
 
   <body>
-    <div class="student-image-container">
-      <img src="STUDENT_P.jpg" alt="" class="image" />
-    </div>
     <header>
       <h1>Jothi Prakasam R</h1>
       <p>
@@ -75,16 +64,7 @@
         mongoose npm package. User registration details and login credential
         verification are simple features in my website.
       </p>
-      <img
-        src="db.js - project1 - Visual Studio Code 26-02-2024 20_54_35.png"
-        alt=""
-        class="image"
-      />
-      <img
-        src="TheCandle.com - Google Chrome 26-02-2024 22_25_05.png"
-        alt=""
-        class="image"
-      />
     </header>
   </body>
 </html>
+
