@@ -2,20 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Jothi Prakasam R - Web & Linux Developer</title>
     <style>
       body {
         font-family: "Arial", sans-serif;
-        background-color: #252525;
-        color: #ffa500;
+        background-color: #0f0f10;
+        color: #ffae00;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 100vh;
+        justify-content: flex-start; /* Updated to flex-start for better scrolling */
+        min-height: 100vh;
+      }
+
+      header {
+        max-width: 800px; /* Limit header width on larger screens */
+        text-align: center;
+        padding: 20px;
+        width: 100%; /* Ensure full width on smaller screens */
+        box-sizing: border-box; /* Include padding in the width calculation */
       }
 
       h1 {
@@ -30,6 +41,10 @@
 
       /* Media query for mobile screens with a maximum width of 767px */
       @media only screen and (max-width: 767px) {
+        header {
+          padding: 10px; /* Adjust padding for smaller screens */
+        }
+
         h1 {
           font-size: 2em; /* Adjust font size for smaller screens */
         }
@@ -56,7 +71,7 @@
         into the intricacies of algorithms and data structures, leveraging my
         skills to build optimized and elegant code.
       </p>
-      <h1>project-1</h1>
+      <h1>TheCandle</h1>
       <p>
         It's a pleasure to share my experience in NodeJS and MongoDB, both are
         very interesting to learn and doing projects. My project is simply based
@@ -64,6 +79,7 @@
         mongoose npm package. User registration details and login credential
         verification are simple features in my website.
       </p>
+      <a href="www.linkedin.com/in/jothi-prakasam-ramesh-000756214">linkedin</a>
     </header>
   </body>
 </html>
