@@ -10,8 +10,9 @@
     <style>
       body {
         font-family: "Arial", sans-serif;
-        background-color: #0f0f10;
-        color: #ffae00;
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        color: #e0e0e0;
         margin: 0;
         padding: 0;
         display: flex;
@@ -32,6 +33,12 @@
       h1 {
         font-size: 2.5em;
         margin-bottom: 0.5em;
+        transition: font-size 0.3s ease, margin-bottom 0.3s ease; /* Smooth transition for font-size and margin-bottom */
+      }
+
+      h1:hover {
+        font-size: 2.7em;
+        margin-bottom: 0.5em; /* You can adjust this value if needed */
       }
 
       p {
@@ -53,6 +60,17 @@
           font-size: 1.5em; /* Adjust font size for smaller screens */
         }
       }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #0056b3; /* Color when the link is hovered */
+      }
     </style>
   </head>
 
@@ -73,13 +91,58 @@
       </p>
       <h1>TheCandle</h1>
       <p>
-        It's a pleasure to share my experience in NodeJS and MongoDB, both are
-        very interesting to learn and doing projects. My project is simply based
-        on message posting, which is stored in MongoDB Compass, and I used the
-        mongoose npm package. User registration details and login credential
-        verification are simple features in my website.
+        My first project, It's a pleasure to share my experience in NodeJS and
+        MongoDB, both are very interesting to learn and doing projects. My
+        project is simply based on message posting, which is stored in MongoDB
+        Compass, and I used the mongoose npm package. User registration details
+        and login credential verification are simple features in my website.
       </p>
-      <a href="www.linkedin.com/in/jothi-prakasam-ramesh-000756214">linkedin</a>
+      <h1>Paper Presentation</h1>
+      <p>
+        I am thrilled to announce that I secured the 3rd prize in the Innovate
+        Paper event at CSI state level covention in SRM valliammai Engineering
+        College. This accomplishment reflects my dedication to innovation and
+        research in Machine learning and deep learning for radioactive
+        pollution. Winning this prize inspires me to continue exploring and
+        contributing to the world of innovation and academic excellence
+      </p>
+      <!--<!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Your Website</title>
+        </head>
+        <body>-->
+      <div class="linkedin-badge-container">
+        <script
+          src="https://platform.linkedin.com/badges/js/profile.js"
+          async
+          defer
+          type="text/javascript"
+          async
+          defer
+          type="text/javascript"
+        ></script>
+        <div
+          class="badge-base LI-profile-badge"
+          data-locale="en_US"
+          data-size="medium"
+          data-theme="dark"
+          data-type="VERTICAL"
+          data-vanity="jothi-prakasam-ramesh-000756214"
+          data-version="v1"
+        >
+          <a
+            class="badge-base__link LI-simple-link"
+            href="https://in.linkedin.com/in/jothi-prakasam-ramesh-000756214?trk=profile-badge"
+            >Jothi Prakasam ramesh</a
+          >
+        </div>
+      </div>
     </header>
   </body>
 </html>
